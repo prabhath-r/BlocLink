@@ -1,5 +1,13 @@
 pragma solidity ^0.8.0;
 
+/**
+ * DecentraNet Contract.
+ * 
+ * This contract manages user data on the blockchain. Users can register 
+ * and their details are stored in a mapping against their address.
+ * 
+ */
+
 contract DecentraNet {
     struct User {
         address userAddress;
@@ -23,3 +31,10 @@ contract DecentraNet {
         return users[_userAddress];
     }
 }
+
+ /**
+ * TODO:
+ * - Add more user-related features such as updating user details.
+ * - Implement events to notify frontend applications of state changes.
+ * - Add security checks and ensure gas efficiency.
+ */
