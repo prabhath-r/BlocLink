@@ -9,10 +9,12 @@
 
 const IPFS = require('ipfs-core');
 
-// Initialize IPFS
-const node = await IPFS.create();
+// Initialize IPFS node
+const node = IPFS.create();
 
-// Sample function to add a file to IPFS
+
+
+/**  This function takes a buffer of the file's content and adds it to IPFS */
 async function addFile(buffer) {
     const { cid } = await node.add(buffer);
     return cid.toString();
