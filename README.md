@@ -47,7 +47,7 @@ In a world where user data is often exploited, DecentraNet aims to give power ba
 
 1. Clone the repository.
 \```bash
-git clone https://github.com/your-username/DecentraNet.git
+git clone https://github.com/prabhath-r/BlocLink.git
 \```
 
 2. Navigate to the project directory and install dependencies.
