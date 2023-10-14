@@ -66,3 +66,4 @@ Contributions are always welcome! Please read our [contribution guidelines](CONT
 
 This project is licensed under the GPL-2.0 License - see the [LICENSE](LICENSE) file for details.
 
+## (P.S. There are no data and cloud services enabled for the project currently; everything is run locally)

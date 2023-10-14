@@ -1,0 +1,15 @@
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-details h2 {
+    margin-top: 0;
+}

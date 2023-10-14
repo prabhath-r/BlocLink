@@ -1,33 +1,39 @@
-/**
- * User Controller.
- * 
- * This controller handles user-related operations. It currently uses an 
- * in-memory store for simplicity, but this should be replaced with 
- * persistent storage like a database.
- * 
- */
+const User = require('../models/User');  // Assuming you have a User model
 
-let users = [];
+module.exports = {
 
-exports.createUser = (req, res) => {
-    const newUser = {
-        id: users.length + 1,
-        name: req.body.name,
-        bio: req.body.bio
-    };
-    users.push(newUser);
-    res.status(201).json(newUser);
+    // Fetch user profile
+    getProfile: async (req, res) => {
+        try {
+            const user = await User.findById(req.user.id);
+            res.status(200).json(user);
+        } catch (error) {
+            res.status(500).json({ message: "Error fetching user profile", error });
+        }
+    },
+
+    // Update user profile
+    updateProfile: async (req, res) => {
+        try {
+            const updatedUser = await User.findByIdAndUpdate(
+                req.user.id, 
+                req.body, 
+                { new: true }
+            );
+            res.status(200).json(updatedUser);
+        } catch (error) {
+            res.status(500).json({ message: "Error updating profile", error });
+        }
+    },
+
+    // Delete user account
+    deleteAccount: async (req, res) => {
+        try {
+            await User.findByIdAndDelete(req.user.id);
+            res.status(200).json({ message: "User account deleted successfully" });
+        } catch (error) {
+            res.status(500).json({ message: "Error deleting user account", error });
+        }
+    }
+
 };
-
-exports.getUser = (req, res) => {
-    const user = users.find(u => u.id === parseInt(req.params.id));
-    if (!user) return res.status(404).send('User not found.');
-    res.json(user);
-};
-
-/**
- * TODO:
- * - Replace in-memory store with database operations.
- * - Add more user-related functionalities like update and delete.
- * - Integrate with the blockchain to fetch user details.
- */
