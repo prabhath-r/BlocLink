@@ -1,24 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './views/Home';
+import Home from 'frontend/src/views/Home';
 
 /**
  * Main Application Component with Routing.
  * 
- * The App component sets up the main routing for the application using React Router.
- * The Home route ("/") will render the Home/Profile page.
- * 
+ * set up the main routing for the application using Router. * 
  * TODO:
- * - Set up other routes (e.g., /chats, /contacts) as more components are developed.
- * - Implement a global state or context to manage user data and app state.
+ * - changed chats and contacts, so gotta set up routes for them
+ * - change the context to manage user data and app state.
  */
 function App() {
     return (
         <Router>
             <div className="App">
                 <Switch>
-                    <Route path="/" exact component={Home} />
-                    {/* Add other routes here as needed */}
+                    <Route path="/" exact component={Home} /> 
                 </Switch>
             </div>
         </Router>

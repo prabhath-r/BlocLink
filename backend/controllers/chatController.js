@@ -1,5 +1,4 @@
-const Chat = require('../models/Chat');  // Assuming you have a Chat model
-
+const Chat = require('frontend/src/components/Chat.js');  
 module.exports = {
 
     // Fetch all chats for a user

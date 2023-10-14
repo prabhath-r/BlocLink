@@ -1,12 +1,12 @@
 /**
  * Post Model.
  * 
- * This file defines the data structure for a post. It should be integrated with
- * a database ORM or ODM to provide structure and validation for saved posts.
+ * data structure for a post
+ * there is no database, so stored in cache
  * 
  * TODO:
- * - Integrate with a database for persistent storage.
- * - Add data validation, constraints, and relationships (e.g., linking to a user).
+ * - Integrate with a database for storage.
+ * - Add data validation, constraints, and relationships 
  */
 const postSchema = {
     id: Number,
@@ -14,5 +14,5 @@ const postSchema = {
     content: String
 };
 
-// This is a mock representation. Replace with actual database model.
-export default postSchema;
+// add database
+export default postSchema; //mock

@@ -1,4 +1,4 @@
-const Post = require('../models/Post');  // Assuming you have a Post model
+const Post = require('frontend/src/components/Post.js');  // Assuming you have a Post model
 
 module.exports = {
 

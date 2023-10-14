@@ -2,8 +2,8 @@ import React from 'react';
 
 function Home() {
     const sampleUser = {
-        name: 'John Doe',
-        bio: 'Crypto enthusiast and developer.',
+        name: 'Elon Musk',
+        bio: 'Alien, here to conquer',
         profileImage: 'path_to_image.jpg'
     };
 

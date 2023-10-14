@@ -1,12 +1,12 @@
 /**
  * Message Model.
  * 
- * This file defines the data structure for a chat message. It should be integrated with
- * a database ORM or ODM to provide structure and validation for saved messages.
+ * structure of chat messge
+ * no database, so the message is stored in cache
  * 
  * TODO:
- * - Integrate with a database for persistent storage.
- * - Add data validation, constraints, and relationships (e.g., linking to a user or a chat group).
+ * - integrate with a database for storage.
+ * - also add data validation, constraints, and relationships
  */
 const messageSchema = {
     id: Number,
@@ -15,5 +15,5 @@ const messageSchema = {
     content: String
 };
 
-// This is a mock representation. Replace with actual database model.
+// mock
 export default messageSchema;

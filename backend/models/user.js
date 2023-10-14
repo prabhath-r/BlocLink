@@ -1,8 +1,8 @@
 /**
  * User Model.
  * 
- * This file defines the data structure for a user. It should be integrated with
- * a database ORM or ODM (like Sequelize for SQL or Mongoose for MongoDB).
+ * user data structure. 
+ * no database, stored in cache
  * 
  * TODO:
  * - Integrate with a database for persistent storage.
@@ -14,5 +14,5 @@ const userSchema = {
     bio: String
 };
 
-// This is a mock representation. Replace with actual database model.
-export default userSchema;
+// add database
+export default userSchema; //mock

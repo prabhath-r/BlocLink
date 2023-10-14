@@ -1,8 +1,8 @@
 /**
- * Main Server File.
+ * Server File.
  * 
- * This file sets up the Express server, middleware, and sample routes. 
- * It's the entry point to the backend API.
+ * entry to backend
+ * sets up the  server, middleware, and routes
  * 
  */
 
@@ -21,10 +21,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
-
-/**
- * TODO:
- * - Implement more comprehensive API routes.
- * - Add middleware for error handling and request logging.
- * - Set up database connections and integrate with the blockchain.
- */
