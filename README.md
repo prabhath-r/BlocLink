@@ -1,6 +1,6 @@
 # BlocLinK: A Decentralized Social & Messaging Platform
 
-DecentraNet is a cutting-edge platform that combines the best features of popular social networks and messaging apps while championing user privacy, data ownership, and decentralization.
+BlocLinK is an upcoming platform that combines the best features of popular social networks and messaging apps while giving you the full control of user privacy, data ownership, and decentralization.
 
 ## Table of Contents
 
@@ -10,10 +10,8 @@ DecentraNet is a cutting-edge platform that combines the best features of popula
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Contribution](#contribution)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
-
+  
 ## Overview
 
 In a world where user data is often exploited, DecentraNet aims to give power back to the users. With a decentralized architecture leveraging blockchain technology, users can control their data, decide who can view their posts, and communicate securely through encrypted messaging.
@@ -47,7 +45,7 @@ In a world where user data is often exploited, DecentraNet aims to give power ba
 
 1. Clone the repository.
 \```bash
-git clone https://github.com/your-username/DecentraNet.git
+git clone https://github.com/prabhath-r/BlocLink.git
 \```
 
 2. Navigate to the project directory and install dependencies.
@@ -58,12 +56,9 @@ npm install
 
 3. Follow specific setup steps for frontend, smart contracts, and backend.
 
-## Contribution
-
-Contributions are always welcome! Please read our [contribution guidelines](CONTRIBUTING.md) first.
 
 ## License
 
-This project is licensed under the GPL-2.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## (P.S. There are no data and cloud services enabled for the project currently; everything is run locally)
