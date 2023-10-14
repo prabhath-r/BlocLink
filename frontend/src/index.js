@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './views/Home';
 
-/**
- * Entry point for the React application.
- * 
- * This file bootstraps the main App component and renders it into the root HTML element.
- * 
- * TODO:
- * - Consider adding service workers for offline capabilities.
- * - Implement any global context or state providers here.
- */
-ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+function App() {
+    return (
+        <Router>
+            <div className="App">
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                </Switch>
+            </div>
+        </Router>
+    );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
